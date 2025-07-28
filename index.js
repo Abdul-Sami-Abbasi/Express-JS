@@ -8,23 +8,18 @@
 // nested route in get
 // passing multiple call backs in get (through next parameter/function) and Array of Callbacks
 //postman test
+//app.route()
+//router (modular routinng)
 
 import express from 'express';
 const app = express();
 const port = 3000;
 
  
-app.get('/student', (req, res)=>{
-    res.send("Gives All Student");
-})
-app.post('/student', (req, res)=>{
-    res.send("Add New Student");
-})
-app.put('/student', (req, res)=>{
-    res.send(`Gives Student`);
-})
-app.delete('/student', (req, res)=>{
-    res.send("Delete Student");
-})
+app.route('/student')
+.get((req, res) => res.send("Gives All Student"))
+.post((req, res) => res.send("Add New Student"))
+.put((req, res) => res.send(`Gives Student`))
+.delete((req, res) => res.send("Delete Student"));
 
 app.listen(port, ()=>{console.log("Server Up babby!")})

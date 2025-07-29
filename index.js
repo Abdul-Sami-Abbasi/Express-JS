@@ -12,23 +12,17 @@
 // router (modular routinng)
 // Route Parameters
 // app.param()
+//Controllers
+//Query Strings
 
 import express from 'express';
 const app = express();
 const port = 3000;
 
-app.param('id', (req, res, next, id) => {
-    console.log(`ID: ${id}`);
-
-    if(isNaN(id)) {
-        return res.status(400).send('ID must be a number');
-    }
-    req.id = id;
-    next();
-    })
-
-app.get('/users/:id', (req, res) => {
-    res.send(`User ID: ${req.id}`);
-});
+app.get("/product", (req, res)=>{
+    res.send("Products Page:", req.query.category
+        
+    );
+})
 
 app.listen(port, ()=>{console.log("Server Up babby!")})

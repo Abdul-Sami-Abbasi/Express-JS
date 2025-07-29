@@ -14,13 +14,21 @@
 // app.param()
 
 import express from 'express';
-
 const app = express();
 const port = 3000;
 
-app.get('/:product/:day/:month/:year', (req, res) => {
-    const {product, day, month, year} = req.params;
-    res.send(`<h1>product ${product} was ordered on ${day}/${month}/${year}</h1>`);
-})
+app.param('id', (req, res, next, id) => {
+    console.log(`ID: ${id}`);
+
+    if(isNaN(id)) {
+        return res.status(400).send('ID must be a number');
+    }
+    req.id = id;
+    next();
+    })
+
+app.get('/users/:id', (req, res) => {
+    res.send(`User ID: ${req.id}`);
+});
 
 app.listen(port, ()=>{console.log("Server Up babby!")})

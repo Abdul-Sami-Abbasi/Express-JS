@@ -15,14 +15,23 @@
 //Controllers
 //Query Strings
 // sending JSON response(backend to frontend)
+// middlewares
 
 import express from 'express';
-import products from './products.js';
 const app = express();
 const port = 3000;
 
-app.get("/products", (req, res)=>{
-    res.json(products)
+
+app.get("/", (req, res)=>{
+    res.send("<h1>Hello World!<h1/>");
+});
+
+app.get("/about", (req, res)=>{
+    res.send("<h1>Hello About Section!<h1/>");
+});
+
+app.get("/contact", (req, res)=>{
+    res.send("<h1>Hello Contact Section<h1/>");
 });
 
 app.listen(port, ()=>{console.log("Server Up babby!")})

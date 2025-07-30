@@ -14,15 +14,15 @@
 // app.param()
 //Controllers
 //Query Strings
+// sending JSON response(backend to frontend)
 
 import express from 'express';
+import products from './products.js';
 const app = express();
 const port = 3000;
 
-app.get("/product", (req, res)=>{
-    res.send("Products Page:", req.query.category
-        
-    );
-})
+app.get("/products", (req, res)=>{
+    res.json(products)
+});
 
 app.listen(port, ()=>{console.log("Server Up babby!")})

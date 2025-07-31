@@ -1,8 +1,36 @@
 # 🚀 Express.js Bootcamp – From Basics to Advanced
 
+![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=for-the-badge&logo=node.js)
+![Express.js](https://img.shields.io/badge/Express.js-5.0-blue?style=for-the-badge&logo=express)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)
+
 Welcome to my **Express.js Learning Journey**!  
 This repository documents my step-by-step exploration of Express.js — one concept at a time.  
 It’s designed both for my own revision and for future learners who want to understand Express.js in depth.
+
+---
+
+## 📌 Table of Contents
+- [📂 Repository Structure](#-repository-structure)
+- [📑 Chapters Covered](#-chapters-covered)
+  - [Chapter 1: What is Express.js & Basic Routing](#chapter-1-what-is-expressjs--basic-routing)
+  - [Chapter 2: Advanced Routing](#chapter-2-advanced-routing)
+  - [Chapter 3: Request, Response & Next](#chapter-3-request-response--next)
+  - [Chapter 4: approute](#chapter-4-approute)
+  - [Chapter 5: Router in Express.js](#chapter-5-router-in-expressjs)
+  - [Chapter 6: Route Parameters](#chapter-6-route-parameters)
+  - [Chapter 7: appparam](#chapter-7-appparam)
+  - [Chapter 8: Controllers in Express.js](#chapter-8-controllers-in-expressjs)
+  - [Chapter 9: Query Strings](#chapter-9-query-strings)
+  - [Chapter 10: Sending JSON from Backend to Frontend](#chapter-10-sending-json-from-backend-to-frontend)
+  - [Chapter 11: Middlewares in Express.js](#chapter-11-middlewares-in-expressjs)
+  - [Chapter 12: Serving Static Files](#chapter-12-serving-static-files)
+  - [Chapter 13: Template Engines in Express.js](#chapter-13-template-engines-in-expressjs)
+  - [Chapter 14: Error Handling Middleware](#chapter-14-error-handling-middleware)
+- [⚙️ How to Run Examples](#️-how-to-run-examples)
+- [🛠 Tools & Technologies](#-tools--technologies)
+- [🎯 Goal](#-goal)
 
 ---
 
@@ -10,95 +38,80 @@ It’s designed both for my own revision and for future learners who want to und
 
 Each folder corresponds to a specific **chapter/topic**, with working code examples written in **ES6 import/export format**.
 
-01-basic-routing/
-02-advanced-routing/
-03-req-res-next/
-04-app-route/
-05-router/
-06-route-parameters/
-07-app-param/
-08-controllers/
-09-query-strings/
-10-send-json/
-11-middlewares/
-12-static-files/
-13-template-engines/
-14-error-handling/
-
 
 ---
 
 ## 📑 Chapters Covered
 
-### **Chapter 1: What is Express.js & Basic Routing**
+### Chapter 1: What is Express.js & Basic Routing
 - Definition of Express.js
 - Setting up a simple server
 - Handling GET & POST routes
 
 ---
 
-### **Chapter 2: Advanced Routing**
+### Chapter 2: Advanced Routing
 - Route chaining (`app.route`)
 - Handling multiple HTTP methods
 - Grouping related routes
 
 ---
 
-### **Chapter 3: Request, Response & Next**
+### Chapter 3: Request, Response & Next
 - `req` (request) object properties
 - `res` (response) object methods
 - Role of `next()` in middleware flow
 
 ---
 
-### **Chapter 4: app.route()**
+### Chapter 4: app.route()
 - Cleaner syntax for defining routes
 - Handling multiple actions for the same route path
 
 ---
 
-### **Chapter 5: Router in Express.js**
+### Chapter 5: Router in Express.js
 - Creating modular routes
 - Using `express.Router()`
 - Structuring large applications
 
 ---
 
-### **Chapter 6: Route Parameters**
+### Chapter 6: Route Parameters
 - Defining dynamic routes using `:param`
 - Accessing parameters via `req.params`
 
 ---
 
-### **Chapter 7: app.param()**
+### Chapter 7: app.param()
 - Middleware for route parameters
 - Validation & preprocessing of parameters
 - Avoiding repeated code in routes
 
 ---
 
-### **Chapter 8: Controllers in Express.js**
+### Chapter 8: Controllers in Express.js
 - Separating route logic into controllers
 - Creating modular and maintainable code
 - Preparing for MVC architecture
 
 ---
 
-### **Chapter 9: Query Strings**
+### Chapter 9: Query Strings
 - Using `req.query` to access query parameters
 - Filtering, searching, and pagination
 - Default values for query parameters
 
 ---
 
-### **Chapter 10: Sending JSON from Backend to Frontend**
+### Chapter 10: Sending JSON from Backend to Frontend
 - Using `res.json()` for JSON responses
 - Sending status codes with data
 - Building the foundation of REST APIs
 
 ---
 
-### **Chapter 11: Middlewares in Express.js**
+### Chapter 11: Middlewares in Express.js
 - Definition and types of middleware:
   - Application-level
   - Route-level
@@ -110,21 +123,21 @@ Each folder corresponds to a specific **chapter/topic**, with working code examp
 
 ---
 
-### **Chapter 12: Serving Static Files**
+### Chapter 12: Serving Static Files
 - Using `express.static()` middleware
 - Hosting HTML, CSS, and JavaScript files
 - Serving static assets with or without a virtual path
 
 ---
 
-### **Chapter 13: Template Engines in Express.js**
+### Chapter 13: Template Engines in Express.js
 - Rendering dynamic HTML with EJS
 - Passing data from backend to views
 - Using loops and conditionals inside templates
 
 ---
 
-### **Chapter 14: Error Handling Middleware**
+### Chapter 14: Error Handling Middleware
 - Global error handler with `(err, req, res, next)`
 - Handling sync & async errors
 - Returning consistent error responses
@@ -140,13 +153,3 @@ Each folder corresponds to a specific **chapter/topic**, with working code examp
    cd expressjs-bootcamp
 
 
----
-
-⚡ This README is structured for **GitHub best practices**:  
-- Clean sectioning with **chapters**  
-- Easy **setup & usage instructions**  
-- Beginner-friendly explanations  
-
----
-
-Do you want me to also add a **Table of Contents with clickable links** (so each chapter in README jumps to its section), or keep it clean and linear?

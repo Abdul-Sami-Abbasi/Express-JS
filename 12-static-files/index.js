@@ -10,7 +10,7 @@
 
 import express from 'express';
 
-const app = express();
+export const app = express();
 const PORT = 3000;
 
 // Serve static files from "public" folder

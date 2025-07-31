@@ -1,3 +1,6 @@
+// topics Covered in this course (Express.JS)
+
+
 //create folder
 //npm init -y
 //npm install express
@@ -16,22 +19,6 @@
 //Query Strings
 // sending JSON response(backend to frontend)
 // middlewares
-
-import express from 'express';
-const app = express();
-const port = 3000;
-
-
-app.get("/", (req, res)=>{
-    res.send("<h1>Hello World!<h1/>");
-});
-
-app.get("/about", (req, res)=>{
-    res.send("<h1>Hello About Section!<h1/>");
-});
-
-app.get("/contact", (req, res)=>{
-    res.send("<h1>Hello Contact Section<h1/>");
-});
-
-app.listen(port, ()=>{console.log("Server Up babby!")})
+// serving Static files
+// ejs template engine
+// body Parser npm (for get data that is posted through postman)

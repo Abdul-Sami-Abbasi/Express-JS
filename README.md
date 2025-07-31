@@ -152,4 +152,21 @@ Each folder corresponds to a specific **chapter/topic**, with working code examp
    git clone https://github.com/your-username/expressjs-bootcamp.git
    cd expressjs-bootcamp
 
+---
+
+  ## 🛠 Tools & Technologies
+
+- Node.JS
+- Express.JS
+- EJS (for template engine example)
+- ES6 Modules
+
+---
+
+   ## 🎯 Goal
+
+This repository will remain my Express.js revision source and a learning hub for beginners who want to master backend development step by step.
+
+If you find it helpful, ⭐ the repo and share it with fellow learners!
+
 
